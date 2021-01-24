@@ -8,6 +8,10 @@ const config = {
     roleID: ""
 };
 
+client.on("ready", () => {
+    console.log(`${client.user.tag} is ready !`);
+});
+
 client.on("voiceStreamingStart", (member, voiceChannel) => {
     if (member.guild.id !== config.guildID) return;
     member.roles.add(config.roleID);
