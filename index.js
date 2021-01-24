@@ -4,8 +4,8 @@ const client = new Client();
 logs(client);
 
 const config = {
-    guildID: "",
-    roleID: ""
+    guildID: "Guild ID",
+    roleID: "Role ID"
 };
 
 client.on("ready", () => {
